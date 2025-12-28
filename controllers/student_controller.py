@@ -17,5 +17,5 @@ class StudentController:
         
         self.model.add_student(std_name, std_age, course, file_path)
 
-    def fetch_students():
+    def fetch_students(self):
         return self.model.get_students()
