@@ -14,7 +14,7 @@ class StudentModel:
         self.cursor.execute(query,(std_name,std_age,course,file_path))
         self.db.commit()
 
-    def get_students(self):
+    def get_students():
         self.cursor.execute("Select * from student")
         return self.cursor.fetchall()
 
